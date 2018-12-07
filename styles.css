@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin-top: 3%;
+    margin-bottom: 0%;
+
+}
+
+header {
+    background-color: #86c5fc;
+    height: 100%;
+    text-transform: uppercase;
+    color: #ffffff;
+    clear: both;
+    font-size: 130%;
+    font-stretch: expanded;
+    font-weight: 10%;
+
+
+}
+
+.supporting2 {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+    background: #6cb9fc;
+
+}
+
+.pic1 {
+    left: 5;
+    text-align: center;
+    background-color: white;
+}
+
+.pic2 {
+    right: 5;
+    text-align: center;
+    background-color: white;
+}
+
+.pic3 {
+    left: 5;
+    text-align: center;
+    background-color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid #8BED5E;
+    background: #333333;
+    padding: 1%;
+
+}
+
+.navLinks {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.navLinks:hover {
+    color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 1em 1em;
+}
+
+    {
+    box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 6%;
+
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+
+    }
+}
+
+
+
+.menubar {
+    margin-left: 3%;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 100%
+}
+
+.menubar li {
+    display: inline-block;
+    background: #faebd8;
+    padding: 15px 50px;
+    cursor: pointer;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+/* top-level li elements that are also a elements */
+.menubar li a {
+    color: #333333;
+    text-decoration: none;
+}
+
+/* what happens when you hover over a top-level li element */
+.menubar li:hover {
+    background: #84fed5;
+}
+
+/* default appearance of secondary ul/submenu elements (styled but invisible) */
+.menubar li ul {
+    display: none;
+    padding: 10;
+    position: absolute;
+    top: 39px;
+    left: 0;
+    text-align: left;
+}
+
+/* appearance of submenu li elements */
+.menubar li ul li {
+    background: white;
+    color: black;
+    display: block;
+}
+
+/* appearance of submenu li elements that are also a elements */
+.menubar li ul li a {
+    color: black;
+    white-space: nowrap;
+}
+
+/* hovering over submenu ul element turns switches its display value from display: none; to display: block; */
+.menubar li:hover ul {
+    display: block;
+}
+
+/* what happens when you hover over an li item in the submenu */
+.menubar li ul li:hover {
+    background: #84fed5;
+}
+
+
+h1 {
+    padding: 1em;
+    text-decoration: none;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+main {
+    width: 75%;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 13%;
+    margin-top: 1%;
+}
+
+.mySlides {
+    margin-top: 5%;
+    display: none;
+    max-width: 150%;
+
+}
+
+.supporting {
+    margin-top: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+    background: #6cb9fc;
+
+}
+
+.col {
+    display: inline-block;
+    background-color: #6cb9fc;
+    padding: 15px;
+    width: 30%;
+}
+
+.column {
+
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row: clear: both;
+display: table;
+
+}
+
+.btn1 {
+    background-color: #122631;
+    border: 1px solid #122631;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.btn2 {
+    background-color: #122631;
+    border: 1px solid #122631;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+.btn3 {
+    background-color: #122631;
+    border: 1px solid #122631;
+    color: white;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #333333;
+    height: 100%;
+    padding: 1%;
+    text-transform: uppercase;
+    color: #ffffff;
+    clear: both;
+    font-weight: 10;
+    font-size: 80%;
+}
+
+.social-icons {
+    text-align: center;
+
+}
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 30%;
+    height: 30%;
+    margin-right: 0;
+    padding: 0;
+}

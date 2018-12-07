@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>UNC Walk-Ons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+
+<header>
+    <h1><img class="logo" src="unc-walk-ons-logo-155x300.png" style=width:3%> UNC Walk-Ons </h1>
+
+
+    <nav class="container">
+        <div class="1">
+            <a href="index3.html" class="navLinks">About Us </a>
+        </div>
+        <div class="2">
+            <a href="index3.html" class="navLinks"> Listen</a>
+        </div>
+        <div class="3">
+            <a href="index2.html" class="navLinks"> Upcoming Events </a>
+        </div>
+        <div class="4">
+            <a href="index3.html" class="navLinks">Members</a>
+        </div>
+        <div class="5">
+            <a href="index3.html" class="navLinks">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <main>
+
+        <article>
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="First%20pic%20slideshow.jpg" style="width:100%">
+                <img class="mySlides" src="rectangle%201.jpg" style="width:100%">
+                <img class="mySlides" src="rec%202.jpg" style="width:100%">
+                <img class="mySlides" src="rec%204.jpg" style="width:100%">
+
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+
+            </script>
+
+        </article>
+
+    </main>
+
+    <section class="supporting">
+        <div class="container2">
+            <div class="col">
+                <i class="fas fa-music fa-2x"></i>
+                <h2>Listen</h2>
+                <p>Check out our music</p>
+                <a href="index3.html" class='btn2'> LEARN MORE</a><br>
+            </div>
+
+            <div class="col">
+                <i class="fas fa-user-circle fa-2x"></i>
+                <h2>About</h2>
+                <p>Get to know us</p>
+                <a href="index3.html" class='btn2'> LEARN MORE</a><br>
+            </div>
+
+            <div class="col">
+                <i class="fas fa-phone fa-2x"></i>
+                <h2>Contact Us</h2>
+                <p>Reach out</p>
+                <a href="index3.html" class='btn3'> LEARN MORE </a><br>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/uncwalkons/"><img src='Facebook.png' /></a></li>
+            <li><a href="https://twitter.com/uncwalkons?lang=en"><img src='Twitter.png' /></a></li>
+            <li><a href="https://www.youtube.com/user/elizmoran12"><img src='YouTube.png' /></a></li>
+            <li><a href="https://www.instagram.com/unc_walkons/"><img src='Instagram.png' /></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
